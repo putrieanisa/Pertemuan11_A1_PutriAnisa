@@ -1,0 +1,16 @@
+def hitung_faktorial(n):
+    if n < 0:
+        return "Faktorial tidak terdefinisi untuk bilangan negatif"
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        faktorial = 1
+        for i in range(2, n + 1):
+            faktorial *= i
+        return faktorial
+
+# Contoh penggunaan
+bilangan = int(input("Masukkan bilangan bulat positif: "))
+hasil_faktorial = hitung_faktorial(bilangan)
+
+print(f"Faktorial dari {bilangan}! adalah {hasil_faktorial}")
